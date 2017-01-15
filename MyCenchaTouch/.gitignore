@@ -1,0 +1,12 @@
+/build
+/gradle
+/.idea
+/gradlew
+gradlew
+gradlew.bat
+/gradlew.bat
+/MultiCamera.iml
+MultiCamera.iml
+my_log.txt
+./my_log.txt
+/my_log.txt
