@@ -28,6 +28,7 @@ public class HomeTwoFragment extends BaseFragment {
 
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setUseWideViewPort(true);
+        webSettings.setJavaScriptEnabled(true);
 
         mywebview.setBackgroundColor(Color.TRANSPARENT);  //  WebView 背景透明效果
         mywebview.loadUrl("file:///android_asset/index.html");

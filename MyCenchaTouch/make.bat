@@ -8,8 +8,11 @@ if  "%1" == "" goto mymake
 if  %1 == clean goto myclean
 if  %1 == make goto mymake
 if  %1 == install goto myinstall
+if  %1 == i goto myinstall
 if  %1 == run goto myrun
+if  %1 == r goto myrun
 if  %1 == log goto mylog
+if  %1 == c goto myclean
 
 
 
