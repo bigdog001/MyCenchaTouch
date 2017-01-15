@@ -1,0 +1,30 @@
+﻿$body-bg-color: #000;
+ 
+$base-color: #333;
+$base-gradient: 'matte';
+$active-color: #B2DF1E;
+
+@import 'sencha-touch/default/all';
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet; 
+@include sencha-picker;
+@include sencha-toolbar-forms;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-carousel;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-form;
+@include sencha-sheet;
+@include pictos-iconmask('address_book');
+@include pictos-iconmask('battery_full');
+@include pictos-iconmask('bolt');
+.x-toolbar .x-title {
+    color: saturate(lighten($active-color, 10%), 20%);
+    text-shadow: rgba(#fff, .8) 0 1px 20px;
+}
+html,body{
+    font-family:"Helvetica Neue", HelveticaNeue, "Helvetica-Neue",Helvetica, "BBAlpha Sans", sans-serif,"宋体"
+}

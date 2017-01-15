@@ -1,0 +1,60 @@
+﻿$base-color: #FF9696;
+$list-bg-color:#FFD;
+$list-pressed-color:#FF9696;
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
+@include sencha-button-ui('action',#FF3030, 'glossy');
+@include pictos-iconmask('check1');
+// Your custom code goes here...
+.x-button.x-button-action, .x-toolbar .x-button.x-button-action{
+    color:white;
+}
+.x-toolbar .x-title {
+    color: white;
+}
+.x-form .x-body,
+.x-form .x-body .x-form-inner{
+    background-image: url(../../resources/images/gradation_r.jpg);
+    background-repeat: repeat-x;  
+}
+.x-form-fieldset-title{
+    color:white;
+}
+.x-form-fieldset{
+    background-color:red;
+}
+.x-form-fieldset .x-form-label{
+    background-color:#FDD;
+}
+.x-field-required label::after, .x-field-required .x-form-label::after{
+    content:"*";
+    display:inline;
+    color:red;
+    font-weight:bold;
+}
+.x-form-fieldset .x-field-input{
+    background-color:#FFD;
+}
+.x-msgbox-dark .x-msgbox-text{
+    color:white;
+    font-weight:bold;
+}
+.x-list .x-list-inner{
+    background-color:#FFD;
+}
