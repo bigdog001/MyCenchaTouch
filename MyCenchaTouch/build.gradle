@@ -9,10 +9,6 @@ android {
             manifest.srcFile 'src/phone/AndroidManifest.xml'
             assets.srcDirs = ['src/phone/assets']
         }
-        pad {
-            manifest.srcFile 'src/pad/AndroidManifest.xml'
-            assets.srcDirs = ['src/pad/assets']
-        }
     }
 
     signingConfigs {
@@ -45,21 +41,6 @@ android {
 //            runProguard true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-
-      /*  forrelease {
-            versionNameSuffix '1.1.1.0'
-            debuggable false
-        }
-        fordebug {
-            applicationIdSuffix '.debug'
-        }
-        fordailybuild {
-            versionNameSuffix '1.1.1.0'
-            applicationIdSuffix '.db'
-        }
-        formonkeytest {
-            applicationIdSuffix '.monkey'
-        }*/
     }
 
     productFlavors {

@@ -1,7 +1,7 @@
 @echo off
 doskey ls=dir $*
 set jarname=TGuardSDKLib_1.0.30_RELEASE.jar
-set MYHOME=C:\Users\jw362j\a\work\code\p\multicamera\MultiCamera\AndroidProject_Root\MultiCamera
+set MYHOME=C:\Users\jw362j\a\z_temp\mycenchatouch\MyCenchaTouch\MyCenchaTouch
 
 
 if  "%1" == "" goto mymake
@@ -30,8 +30,8 @@ rem install the new builded jar into the destination directory
 :myinstall
 echo "uninstall apps.bigdog.com.multicamera.phone"
 adb uninstall apps.bigdog.com.multicamera.phone
-echo "install %MYHOME%\build\outputs\apk\MultiCamera-phone-debug.apk"
-adb install   %MYHOME%\build\outputs\apk\MultiCamera-phone-debug.apk
+echo "install %MYHOME%\build\outputs\apk\MyCenchaTouch-phone-debug.apk"
+adb install   %MYHOME%\build\outputs\apk\MyCenchaTouch-phone-debug.apk
 goto end
 
 :myrun

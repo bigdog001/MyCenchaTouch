@@ -7,26 +7,17 @@
     <RelativeLayout
         android:id="@+id/preview_top_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         >
-        <Button
-            android:id="@+id/preview_top_btn_record"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true"
-            android:text="@string/home_tab_btn_top_record_start"
-            android:background="@drawable/shape_recoed_btn"
-            android:textColor="@android:color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <apps.bigdog.com.multicamera.view.MySurfaceView
-            android:id="@+id/mySurfaceView"
-            android:layout_below="@id/preview_top_btn_record"
+        <WebView
+            android:id="@+id/mywebview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            ></WebView>
     </RelativeLayout>
 
     

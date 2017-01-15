@@ -1,6 +1,9 @@
 package apps.bigdog.com.multicamera.fragment;
 
+import android.graphics.Color;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 import com.tool.mytool.lib.util.LogUtil;
 
@@ -16,28 +19,20 @@ import apps.bigdog.com.multicamera.view.MySurfaceView;
  */
 @ContentView(R.layout.fragment_home2)
 public class HomeTwoFragment extends BaseFragment {
-    @ViewInject(R.id.mySurfaceView)
-    private MySurfaceView mySurfaceView;
+    @ViewInject(R.id.mywebview)
+    private WebView mywebview;
 
     @Override
     protected void initParams() {
-        mySurfaceView.setBackgroundResource(R.drawable.screen_no_signal);
+        WebSettings webSettings = mywebview.getSettings();
+
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
+
+        mywebview.setBackgroundColor(Color.TRANSPARENT);  //  WebView 背景透明效果
+        mywebview.loadUrl("file:///android_asset/index.html");
     }
 
-    /*
-    @Event(value = {R.id.mySurfaceView}, type = View.OnClickListener.class)
-    private void ItemOnclick(View v) {
-        switch (v.getId()) {
-            case R.id.mySurfaceView:
-//                DoAutoLaunchSwitcher();
-                break;
-
-
-            default:
-                break;
-        }
-    }
-*/
     @Override
     public void OnStop() {
 
